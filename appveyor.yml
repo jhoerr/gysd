@@ -5,4 +5,21 @@ before_build:
 build_script:
 - cmd: dnu build src\Site
 build:
+  publish_wap: true
   verbosity: normal
+deploy:
+- provider: WebDeploy
+  server: https://gysd-test.scm.azurewebsites.net:443
+  website: gysd-test
+  username: $gysd-test
+  password:
+    secure: QTGXbMy+rVfkLPGsHEqys79C4oy+rK3mE/Dlwxr6aCtsB74E8GBqvYxZSLiAN9paLfw8a431rZaBlUws+BrWww==
+  ntlm: false
+  remove_files: false
+  app_offline: false
+  skip_dirs: \\App_Data
+  skip_files: web.config
+  on:
+    branch: release
+    platform: x86
+    configuration: debug

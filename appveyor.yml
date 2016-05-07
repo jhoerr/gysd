@@ -19,5 +19,3 @@ deploy:
   app_offline: false
   skip_dirs: \\App_Data
   skip_files: web.config
-  on:
-    configuration: debug

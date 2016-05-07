@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Site", "Site\Site.xproj", "{DC866179-3B6B-4572-8CD0-1CD543D763CC}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Site", "src\Site\Site.xproj", "{DC866179-3B6B-4572-8CD0-1CD543D763CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{5BF8D3E6-D017-44B0-8FF7-014BD700254E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

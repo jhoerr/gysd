@@ -20,6 +20,5 @@ deploy:
   skip_dirs: \\App_Data
   skip_files: web.config
   on:
-    branch: release
     platform: x86
     configuration: debug
